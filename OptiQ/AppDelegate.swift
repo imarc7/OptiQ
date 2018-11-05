@@ -6,6 +6,8 @@
 //  Copyright © 2018 Marc Ibrahim. All rights reserved.
 //
 
+import FBSDKCoreKit
+import Parse
 import UIKit
 
 @UIApplicationMain
@@ -16,6 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Parse.initialize(
+            with: ParseClientConfiguration(block: { (configuration:ParseMutableClientConfiguration) -> Void in
+                configuration.applicationId = "optiq14"
+                configuration.clientKey = "bla"  // set to nil assuming you have not set clientKey
+                configuration.server = "https://optiq.herokuapp.com/parse"
+            })
+        )
+        FBSDKApplicationDelegate.sharedInstance()?.application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
     }
 

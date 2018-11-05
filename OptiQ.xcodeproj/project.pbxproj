@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45B7331566CF9AA6CCC137AC /* Pods_OptiQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945CDE3267AE44FA18083EDA /* Pods_OptiQ.framework */; };
 		B9983768218ED9EC008FE326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9983767218ED9EC008FE326 /* AppDelegate.swift */; };
 		B998376A218ED9EC008FE326 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9983769218ED9EC008FE326 /* ViewController.swift */; };
 		B998376D218ED9EC008FE326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B998376B218ED9EC008FE326 /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		B9983772218ED9EF008FE326 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9983770218ED9EF008FE326 /* LaunchScreen.storyboard */; };
 		B998377D218ED9EF008FE326 /* OptiQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B998377C218ED9EF008FE326 /* OptiQTests.swift */; };
 		B9983788218ED9EF008FE326 /* OptiQUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9983787218ED9EF008FE326 /* OptiQUITests.swift */; };
+		B9983797218F60F5008FE326 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9983796218F60F5008FE326 /* LoginViewController.swift */; };
+		B998379A218F633C008FE326 /* FBPermissionsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9983799218F633C008FE326 /* FBPermissionsUtil.swift */; };
+		B998379C218F6934008FE326 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B998379B218F6934008FE326 /* Login.storyboard */; };
+		B998379E218F6A2A008FE326 /* IdentifiersUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B998379D218F6A2A008FE326 /* IdentifiersUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09E1561FE3529B9E12EC5448 /* Pods-OptiQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptiQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-OptiQ/Pods-OptiQ.release.xcconfig"; sourceTree = "<group>"; };
+		945CDE3267AE44FA18083EDA /* Pods_OptiQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OptiQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D1FA6758552840E396A861 /* Pods-OptiQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptiQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OptiQ/Pods-OptiQ.debug.xcconfig"; sourceTree = "<group>"; };
 		B9983764218ED9EC008FE326 /* OptiQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OptiQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9983767218ED9EC008FE326 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9983769218ED9EC008FE326 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 		B9983783218ED9EF008FE326 /* OptiQUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OptiQUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9983787218ED9EF008FE326 /* OptiQUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptiQUITests.swift; sourceTree = "<group>"; };
 		B9983789218ED9EF008FE326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9983796218F60F5008FE326 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B9983799218F633C008FE326 /* FBPermissionsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBPermissionsUtil.swift; sourceTree = "<group>"; };
+		B998379B218F6934008FE326 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B998379D218F6A2A008FE326 /* IdentifiersUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiersUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B7331566CF9AA6CCC137AC /* Pods_OptiQ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DA519E089F4A1178A4E79BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2D1FA6758552840E396A861 /* Pods-OptiQ.debug.xcconfig */,
+				09E1561FE3529B9E12EC5448 /* Pods-OptiQ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B70F424B61CFA4D896A6179E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				945CDE3267AE44FA18083EDA /* Pods_OptiQ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B998375B218ED9EC008FE326 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +111,8 @@
 				B998377B218ED9EF008FE326 /* OptiQTests */,
 				B9983786218ED9EF008FE326 /* OptiQUITests */,
 				B9983765218ED9EC008FE326 /* Products */,
+				6DA519E089F4A1178A4E79BC /* Pods */,
+				B70F424B61CFA4D896A6179E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +129,8 @@
 		B9983766218ED9EC008FE326 /* OptiQ */ = {
 			isa = PBXGroup;
 			children = (
+				B9983795218F60B6008FE326 /* Login */,
+				B9983798218F62AF008FE326 /* Utils */,
 				B9983767218ED9EC008FE326 /* AppDelegate.swift */,
 				B9983769218ED9EC008FE326 /* ViewController.swift */,
 				B998376B218ED9EC008FE326 /* Main.storyboard */,
@@ -125,6 +159,24 @@
 			path = OptiQUITests;
 			sourceTree = "<group>";
 		};
+		B9983795218F60B6008FE326 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B9983796218F60F5008FE326 /* LoginViewController.swift */,
+				B998379B218F6934008FE326 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B9983798218F62AF008FE326 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B9983799218F633C008FE326 /* FBPermissionsUtil.swift */,
+				B998379D218F6A2A008FE326 /* IdentifiersUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B998378C218ED9EF008FE326 /* Build configuration list for PBXNativeTarget "OptiQ" */;
 			buildPhases = (
+				8FFB25020980DCF207990F35 /* [CP] Check Pods Manifest.lock */,
 				B9983760218ED9EC008FE326 /* Sources */,
 				B9983761218ED9EC008FE326 /* Frameworks */,
 				B9983762218ED9EC008FE326 /* Resources */,
+				CDAC12DF15A5F8C8902B65E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B998379C218F6934008FE326 /* Login.storyboard in Resources */,
 				B9983772218ED9EF008FE326 /* LaunchScreen.storyboard in Resources */,
 				B998376F218ED9EF008FE326 /* Assets.xcassets in Resources */,
 				B998376D218ED9EC008FE326 /* Main.storyboard in Resources */,
@@ -251,11 +306,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8FFB25020980DCF207990F35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OptiQ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDAC12DF15A5F8C8902B65E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OptiQ/Pods-OptiQ-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OptiQ/Pods-OptiQ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9983760218ED9EC008FE326 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9983797218F60F5008FE326 /* LoginViewController.swift in Sources */,
+				B998379E218F6A2A008FE326 /* IdentifiersUtil.swift in Sources */,
+				B998379A218F633C008FE326 /* FBPermissionsUtil.swift in Sources */,
 				B998376A218ED9EC008FE326 /* ViewController.swift in Sources */,
 				B9983768218ED9EC008FE326 /* AppDelegate.swift in Sources */,
 			);
@@ -430,6 +533,7 @@
 		};
 		B998378D218ED9EF008FE326 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2D1FA6758552840E396A861 /* Pods-OptiQ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +552,7 @@
 		};
 		B998378E218ED9EF008FE326 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09E1561FE3529B9E12EC5448 /* Pods-OptiQ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
