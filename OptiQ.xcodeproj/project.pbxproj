@@ -19,6 +19,14 @@
 		B998379A218F633C008FE326 /* FBPermissionsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9983799218F633C008FE326 /* FBPermissionsUtil.swift */; };
 		B998379C218F6934008FE326 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B998379B218F6934008FE326 /* Login.storyboard */; };
 		B998379E218F6A2A008FE326 /* IdentifiersUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B998379D218F6A2A008FE326 /* IdentifiersUtil.swift */; };
+		B9E59C00219613E600C2CA9E /* FBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E59BFF219613E600C2CA9E /* FBUser.swift */; };
+		B9E59C032196223900C2CA9E /* EncryptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E59C022196223900C2CA9E /* EncryptionHelper.swift */; };
+		B9E59C052196244A00C2CA9E /* UserUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E59C042196244A00C2CA9E /* UserUtil.swift */; };
+		B9E59C0A2196343800C2CA9E /* psychographics.json in Resources */ = {isa = PBXBuildFile; fileRef = B9E59C092196343800C2CA9E /* psychographics.json */; };
+		B9E59C0C219634E000C2CA9E /* simple_outline_lock_.json in Resources */ = {isa = PBXBuildFile; fileRef = B9E59C0B219634E000C2CA9E /* simple_outline_lock_.json */; };
+		B9E59C0E2196CC9D00C2CA9E /* gradient_animated_background.json in Resources */ = {isa = PBXBuildFile; fileRef = B9E59C0D2196CC9D00C2CA9E /* gradient_animated_background.json */; };
+		B9E59C102196DB9B00C2CA9E /* pumped_up.json in Resources */ = {isa = PBXBuildFile; fileRef = B9E59C0F2196DB9B00C2CA9E /* pumped_up.json */; };
+		B9E59C122196DCF700C2CA9E /* funky_chicken.json in Resources */ = {isa = PBXBuildFile; fileRef = B9E59C112196DCF700C2CA9E /* funky_chicken.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +67,14 @@
 		B9983799218F633C008FE326 /* FBPermissionsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBPermissionsUtil.swift; sourceTree = "<group>"; };
 		B998379B218F6934008FE326 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B998379D218F6A2A008FE326 /* IdentifiersUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiersUtil.swift; sourceTree = "<group>"; };
+		B9E59BFF219613E600C2CA9E /* FBUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBUser.swift; sourceTree = "<group>"; };
+		B9E59C022196223900C2CA9E /* EncryptionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionHelper.swift; sourceTree = "<group>"; };
+		B9E59C042196244A00C2CA9E /* UserUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUtil.swift; sourceTree = "<group>"; };
+		B9E59C092196343800C2CA9E /* psychographics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = psychographics.json; sourceTree = "<group>"; };
+		B9E59C0B219634E000C2CA9E /* simple_outline_lock_.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = simple_outline_lock_.json; sourceTree = "<group>"; };
+		B9E59C0D2196CC9D00C2CA9E /* gradient_animated_background.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gradient_animated_background.json; sourceTree = "<group>"; };
+		B9E59C0F2196DB9B00C2CA9E /* pumped_up.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pumped_up.json; sourceTree = "<group>"; };
+		B9E59C112196DCF700C2CA9E /* funky_chicken.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = funky_chicken.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +145,13 @@
 		B9983766218ED9EC008FE326 /* OptiQ */ = {
 			isa = PBXGroup;
 			children = (
+				B9E59C112196DCF700C2CA9E /* funky_chicken.json */,
+				B9E59C0F2196DB9B00C2CA9E /* pumped_up.json */,
+				B9E59C0D2196CC9D00C2CA9E /* gradient_animated_background.json */,
+				B9E59C0B219634E000C2CA9E /* simple_outline_lock_.json */,
+				B9E59C092196343800C2CA9E /* psychographics.json */,
+				B9E59C062196306C00C2CA9E /* Lottie */,
+				B9E59C012196222000C2CA9E /* Helpers */,
 				B9983795218F60B6008FE326 /* Login */,
 				B9983798218F62AF008FE326 /* Utils */,
 				B9983767218ED9EC008FE326 /* AppDelegate.swift */,
@@ -172,9 +195,26 @@
 			isa = PBXGroup;
 			children = (
 				B9983799218F633C008FE326 /* FBPermissionsUtil.swift */,
+				B9E59C042196244A00C2CA9E /* UserUtil.swift */,
 				B998379D218F6A2A008FE326 /* IdentifiersUtil.swift */,
+				B9E59BFF219613E600C2CA9E /* FBUser.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		B9E59C012196222000C2CA9E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B9E59C022196223900C2CA9E /* EncryptionHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B9E59C062196306C00C2CA9E /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,10 +323,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9E59C0A2196343800C2CA9E /* psychographics.json in Resources */,
+				B9E59C0E2196CC9D00C2CA9E /* gradient_animated_background.json in Resources */,
+				B9E59C122196DCF700C2CA9E /* funky_chicken.json in Resources */,
 				B998379C218F6934008FE326 /* Login.storyboard in Resources */,
 				B9983772218ED9EF008FE326 /* LaunchScreen.storyboard in Resources */,
 				B998376F218ED9EF008FE326 /* Assets.xcassets in Resources */,
+				B9E59C102196DB9B00C2CA9E /* pumped_up.json in Resources */,
 				B998376D218ED9EC008FE326 /* Main.storyboard in Resources */,
+				B9E59C0C219634E000C2CA9E /* simple_outline_lock_.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,16 +378,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OptiQ/Pods-OptiQ-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -356,11 +407,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9E59C00219613E600C2CA9E /* FBUser.swift in Sources */,
 				B9983797218F60F5008FE326 /* LoginViewController.swift in Sources */,
 				B998379E218F6A2A008FE326 /* IdentifiersUtil.swift in Sources */,
 				B998379A218F633C008FE326 /* FBPermissionsUtil.swift in Sources */,
+				B9E59C052196244A00C2CA9E /* UserUtil.swift in Sources */,
 				B998376A218ED9EC008FE326 /* ViewController.swift in Sources */,
 				B9983768218ED9EC008FE326 /* AppDelegate.swift in Sources */,
+				B9E59C032196223900C2CA9E /* EncryptionHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

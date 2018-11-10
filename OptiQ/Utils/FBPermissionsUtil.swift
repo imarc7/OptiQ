@@ -10,11 +10,12 @@ import Foundation
 
 class FBPermissionsUtil {
 
-    init() {
-    }
-
-    let email: String = "email"
-    let friends: String = "user_friends"
-    let profilePic: String = "public_profile"
-    let birthday: String = "user_birthday"
+    static let birthday: String = "user_birthday"
+    static let email: String = "email"
+    static let firstName: String = "first_name"
+    static let friends: String = "user_friends"
+    static let gender: String = "gender"
+    static let id: String = "id"
+    static let lastName: String = "last_name"
+    static let profilePic: String = "public_profile"
 }

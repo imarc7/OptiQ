@@ -6,24 +6,25 @@
 //  Copyright © 2018 Marc Ibrahim. All rights reserved.
 //
 
-import UIKit
 import Parse
+import SkyFloatingLabelTextField
+import UIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        testServer()
+        self.fetchNearbyPlaces()
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        let storyboard = UIStoryboard(name: IdentifiersUtil().loginStoryBoard, bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: IdentifiersUtil().loginViewController)
-        self.present(controller, animated: true, completion: nil)
+        self.goToLoginPage()
+        if PFUser.current() == nil {
+            self.goToLoginPage()
+        }
     }
 
-    func testServer() {
+    func fetchNearbyPlaces() {
         let query = PFQuery(className: "Place")
         query.findObjectsInBackground {
             (objects:[PFObject]?, error:Error?) -> Void in
@@ -35,5 +36,10 @@ class ViewController: UIViewController {
         }
     }
 
+    func goToLoginPage() {
+        let storyboard = UIStoryboard(name: IdentifiersUtil().loginStoryBoard, bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: IdentifiersUtil().loginViewController)
+        self.present(controller, animated: true, completion: nil)
+    }
 }
 
