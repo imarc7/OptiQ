@@ -10,9 +10,9 @@ import Foundation
 
 class IdentifiersUtil {
     
-    let loginStoryBoard: String = "Login"
-    let loginViewController: String = "LoginViewController"
+    static let loginStoryBoard: String = "Login"
+    static let loginViewController: String = "LoginViewController"
+    static let placeTableViewCell: String = "PlaceTableViewCell"
+    static let fromPlaceViewToPlaceDetail: String = "fromPlaceViewToPlaceDetail"
 
-    init() {
-    }
 }

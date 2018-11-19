@@ -34,6 +34,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
 
     @IBAction func loginButtonTapped(_ sender: Any) {
+        self.logInWithParse(username: self.emailField.text!, password: self.passwordField.text!)
     }
 
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
@@ -79,15 +80,15 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         newUser.signUpInBackground(block: { (succeed, error) -> Void in  //closure works in parallel
             if ((error) != nil) {
-                self.logInWithParse(id: id)
+                self.logInWithParse(username: id, password: EncryptionHelper.hash(string: id))
             }else {
                 self.dismiss(animated: true, completion: nil)
             }
         })
     }
 
-    func logInWithParse(id: String) {
-        PFUser.logInWithUsername(inBackground: id, password: EncryptionHelper.hash(string: id), block: { (user, error) -> Void in
+    func logInWithParse(username: String, password: String) {
+        PFUser.logInWithUsername(inBackground: username, password: password, block: { (user, error) -> Void in
             if error == nil{
                 self.dismiss(animated: true, completion: nil)
             }
@@ -119,7 +120,6 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         logoAnimationView.frame = CGRect(x: self.view.center.x - 100, y: 100, width: 200, height: 150)
         logoAnimationView.loopAnimation = true
         self.view.addSubview(logoAnimationView)
-        //self.view.sendSubviewToBack(logoAnimationView)
         logoAnimationView.play()
     }
 
